@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'proble/index'
+
   resources :problems
 
   resources :solutions
