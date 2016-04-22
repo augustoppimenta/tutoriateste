@@ -29,6 +29,7 @@ class SolutionsController < ApplicationController
   # POST /solutions.json
   def create
     @solution = Solution.new(solution_params)
+    @solution.user = current_user
 
     respond_to do |format|
       if @solution.save
